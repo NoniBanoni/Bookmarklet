@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Bookmarklet</title>
+    <style>
+      #centerPage {
+        position: absolute;
+        top:  50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id=centerPage>    
+      <a href="javascript:(function f(){window.onbeforeunload=function(){window.open(window.location.href).eval(`(${f})()`);return""};window.onload=function(){setTimeout(function(){window.open(window.location.href).eval(`(${f})()`)},1050)}})();window.onload()">Drag me into your bookmarks bar</a>
+    </div>
+  </body>
+
+</html>
