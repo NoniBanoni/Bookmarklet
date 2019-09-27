@@ -6,7 +6,7 @@
   window.onload = function() {
     setTimeout(function() {
       window.open(window.location.href).eval(`(${f})()`);
-    }, 1150);
+    }, 1500);
   };
   window.onload();
 })();
